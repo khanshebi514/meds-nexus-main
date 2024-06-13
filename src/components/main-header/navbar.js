@@ -16,11 +16,11 @@ export default function Navbar({ handleChange, mobileMenu }) {
         gutter={[2, 6]}
         className="py-3 bg-[#ffff] flex justify-around items-center flex-wrap"
       >
-        <Col md={6} sm={10}>
+        <Col md={4} sm={10}>
           <Image src={logoImg} style={{ width: "200px" }} />
         </Col>
 
-        <Col md={12} sm={0} className="hidden md:block">
+        <Col md={14} sm={0} className="hidden md:block">
           {/* <ul className='flex justify-evenly items-center gap-2 cursor-pointer font-bold text-md'>
       <Link className={router.pathname == "/" ? "hover:text-orange-600" : ""} href='/'>Home</Link>
 
@@ -37,6 +37,8 @@ export default function Navbar({ handleChange, mobileMenu }) {
 
           <Menu
             mode="horizontal"
+            style={{fontSize:'1.2rem', 'font-weight':'700'}}
+            
             onClick={(key) => {
               open(window.location.href = key.keyPath[0])
               // <Link href={`${key.keyPath[0]}`}></Link>

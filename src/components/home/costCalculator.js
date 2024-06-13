@@ -10,7 +10,7 @@ export default function CostCalculator() {
       }}>
         <div className="flex justify-center gap-2 items-center p-5 flex-wrap w-full h-full">
             <div className="right md:w-[50%] hidden md:block">
-                <img src={calculator.src} width='370px'/>
+                <img src={calculator.src} width='370px' style={{objectFit:'cover'}}/>
             </div>
             <div className="left md:w-[40%]">
                 <h1 className='font-bold md:text-4xl text-2xl  text-white'>Experience A New Level Of <span className='text-orange-600'>Medical Billing Cost Calculator</span></h1>
